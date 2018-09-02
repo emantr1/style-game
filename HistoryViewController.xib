@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HistoryViewController" customModule="Fadstir" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="9Kg-tC-hjR" id="WZK-Na-XaS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.55000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXL-Ym-tNg">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="nsR-B9-U2Q"/>
+                        <constraint firstAttribute="height" constant="31" id="xkP-FE-cce"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="22"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="xkP-FE-cce"/>
+                        </mask>
+                    </variation>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JiK-U0-8Fm">
+                    <rect key="frame" x="12" y="5" width="30" height="39"/>
+                    <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="23"/>
+                    <state key="normal" title="&lt;">
+                        <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="backButton:" destination="-1" eventType="touchUpInside" id="FqJ-Ve-XIX"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Kg-tC-hjR">
+                    <rect key="frame" x="0.0" y="53" width="375" height="648"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Ap7-y2-DJH"/>
+                        <outlet property="delegate" destination="-1" id="TCN-fW-6gy"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="9Kg-tC-hjR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="27" id="14q-FD-X0w"/>
+                <constraint firstItem="JiK-U0-8Fm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="1u4-N0-fqo"/>
+                <constraint firstItem="XXL-Ym-tNg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8Qm-zw-wN1"/>
+                <constraint firstAttribute="trailing" secondItem="9Kg-tC-hjR" secondAttribute="trailing" id="9ti-yW-6gt"/>
+                <constraint firstItem="JiK-U0-8Fm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="5" id="BpG-1c-NuA"/>
+                <constraint firstAttribute="bottom" secondItem="9Kg-tC-hjR" secondAttribute="bottom" constant="-34" id="Kja-VA-M2b"/>
+                <constraint firstItem="9Kg-tC-hjR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VLT-Bs-5BO"/>
+                <constraint firstItem="XXL-Ym-tNg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bFQ-Xh-9Gs"/>
+                <constraint firstItem="9Kg-tC-hjR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="c48-NF-V68"/>
+                <constraint firstItem="9Kg-tC-hjR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="53" id="qyk-BE-ZGb"/>
+                <constraint firstAttribute="trailing" secondItem="XXL-Ym-tNg" secondAttribute="trailing" id="ysl-m2-fD6"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="14q-FD-X0w"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="317.5" y="259.5"/>
+        </view>
+    </objects>
+</document>

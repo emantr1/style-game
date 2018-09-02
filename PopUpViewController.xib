@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopUpViewController" customModule="Fadstir" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="TGx-xh-1tC" id="GID-fh-K96"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" contentMode="scaleAspectFit" id="TGx-xh-1tC">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nuR-PS-EbL">
+                    <rect key="frame" x="73" y="8" width="57" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="113" id="7C9-2g-3du"/>
+                        <constraint firstAttribute="width" constant="57" id="Axz-fM-9tz"/>
+                        <constraint firstAttribute="height" constant="52" id="GTW-eN-wue"/>
+                        <constraint firstAttribute="height" constant="110" id="ac9-H5-EDt"/>
+                    </constraints>
+                    <state key="normal" title="Text Message" image="text.jpg"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="7C9-2g-3du"/>
+                            <exclude reference="ac9-H5-EDt"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="textMessageSelected:" destination="-1" eventType="touchUpInside" id="l65-K1-GvU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9Y-34-kU8">
+                    <rect key="frame" x="162" y="8" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="2oG-CY-2LG"/>
+                        <constraint firstAttribute="height" constant="50" id="Lbl-mG-g4H"/>
+                        <constraint firstAttribute="height" constant="100" id="hTg-Fl-50m"/>
+                        <constraint firstAttribute="width" constant="100" id="m1j-ef-nDm"/>
+                    </constraints>
+                    <state key="normal" title="Facebook" image="fb.jpg"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="hTg-Fl-50m"/>
+                            <exclude reference="m1j-ef-nDm"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="facebookSelected:" destination="-1" eventType="touchUpInside" id="2a7-J8-Psq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cob-Gc-1kb">
+                    <rect key="frame" x="237" y="14" width="50" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="NrP-la-Jve"/>
+                        <constraint firstAttribute="height" constant="40" id="ZWn-ts-oFf"/>
+                        <constraint firstAttribute="width" constant="50" id="inA-OG-W31"/>
+                        <constraint firstAttribute="width" constant="100" id="vtm-Oe-ErM"/>
+                    </constraints>
+                    <state key="normal" title="Twitter" image="twitter.png"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="NrP-la-Jve"/>
+                            <exclude reference="vtm-Oe-ErM"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="twitterSelected:" destination="-1" eventType="touchUpInside" id="K7L-oe-4TZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="nuR-PS-EbL" firstAttribute="top" secondItem="TGx-xh-1tC" secondAttribute="top" constant="8" id="FFb-aJ-Zow"/>
+                <constraint firstItem="z9Y-34-kU8" firstAttribute="leading" secondItem="TGx-xh-1tC" secondAttribute="leading" constant="8" id="IKZ-nd-o1C"/>
+                <constraint firstItem="cob-Gc-1kb" firstAttribute="top" secondItem="z9Y-34-kU8" secondAttribute="bottom" constant="8" id="MsQ-zI-cmM"/>
+                <constraint firstItem="cob-Gc-1kb" firstAttribute="leading" secondItem="z9Y-34-kU8" secondAttribute="trailing" constant="25" id="VOe-7u-TCl"/>
+                <constraint firstItem="z9Y-34-kU8" firstAttribute="leading" secondItem="nuR-PS-EbL" secondAttribute="trailing" constant="32" id="WQW-sf-3MD"/>
+                <constraint firstItem="cob-Gc-1kb" firstAttribute="top" secondItem="TGx-xh-1tC" secondAttribute="top" constant="14" id="cMH-4y-hmI"/>
+                <constraint firstItem="z9Y-34-kU8" firstAttribute="top" secondItem="TGx-xh-1tC" secondAttribute="top" constant="8" id="hnO-qR-gNb"/>
+                <constraint firstItem="cob-Gc-1kb" firstAttribute="leading" secondItem="TGx-xh-1tC" secondAttribute="leading" constant="8" id="jXM-We-RKv"/>
+                <constraint firstItem="z9Y-34-kU8" firstAttribute="centerX" secondItem="TGx-xh-1tC" secondAttribute="centerX" id="kGN-op-bfD"/>
+                <constraint firstItem="z9Y-34-kU8" firstAttribute="top" secondItem="nuR-PS-EbL" secondAttribute="bottom" constant="8" id="m8P-Rq-EH5"/>
+                <constraint firstItem="nuR-PS-EbL" firstAttribute="leading" secondItem="TGx-xh-1tC" secondAttribute="leading" constant="8" id="tET-ol-R74"/>
+                <constraint firstItem="nuR-PS-EbL" firstAttribute="top" secondItem="TGx-xh-1tC" secondAttribute="top" constant="8" id="zfA-CJ-KAs"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="tET-ol-R74"/>
+                    <exclude reference="zfA-CJ-KAs"/>
+                    <exclude reference="IKZ-nd-o1C"/>
+                    <exclude reference="m8P-Rq-EH5"/>
+                    <exclude reference="MsQ-zI-cmM"/>
+                    <exclude reference="jXM-We-RKv"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="-1016.5" y="-363.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fb.jpg" width="200" height="200"/>
+        <image name="text.jpg" width="108" height="110"/>
+        <image name="twitter.png" width="320" height="260"/>
+    </resources>
+</document>

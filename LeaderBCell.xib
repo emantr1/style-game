@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="DPk-Pb-RQr" customClass="LeaderBoardCell" customModule="Fadstir" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DPk-Pb-RQr" id="v91-ZN-gMr">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBd-wc-VHc">
+                        <rect key="frame" x="56" y="11" width="209" height="20"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="209" id="IEo-DL-MT3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="challengeicon.png" translatesAutoresizingMaskIntoConstraints="NO" id="FMx-Eq-AA5">
+                        <rect key="frame" x="8" y="0.0" width="43" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="43" id="IM1-5t-WUs"/>
+                            <constraint firstAttribute="width" constant="43" id="Wft-CH-fFu"/>
+                            <constraint firstAttribute="width" secondItem="FMx-Eq-AA5" secondAttribute="height" multiplier="1:1" id="gie-Wm-118"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="gie-Wm-118"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYu-Ah-RNB">
+                        <rect key="frame" x="265" y="0.0" width="55" height="43"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="55" id="k4a-lu-3yi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zBd-wc-VHc" firstAttribute="centerY" secondItem="v91-ZN-gMr" secondAttribute="centerY" id="2Pz-xi-aIV"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="BYu-Ah-RNB" secondAttribute="trailing" constant="-8" id="3ux-HW-gma"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="zBd-wc-VHc" secondAttribute="bottom" constant="3" id="6gn-Yi-8RZ"/>
+                    <constraint firstItem="zBd-wc-VHc" firstAttribute="centerX" secondItem="v91-ZN-gMr" secondAttribute="centerX" id="9O2-wP-N6r"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="BYu-Ah-RNB" secondAttribute="bottom" constant="-8" id="D37-Er-iav"/>
+                    <constraint firstItem="BYu-Ah-RNB" firstAttribute="leading" secondItem="zBd-wc-VHc" secondAttribute="trailing" constant="3" id="GnV-b3-xka"/>
+                    <constraint firstItem="FMx-Eq-AA5" firstAttribute="centerY" secondItem="v91-ZN-gMr" secondAttribute="centerY" id="ReM-z1-hYo"/>
+                    <constraint firstItem="BYu-Ah-RNB" firstAttribute="top" secondItem="v91-ZN-gMr" secondAttribute="topMargin" constant="3" id="RpD-jw-lFo"/>
+                    <constraint firstItem="zBd-wc-VHc" firstAttribute="top" secondItem="v91-ZN-gMr" secondAttribute="topMargin" constant="3" id="SDE-n0-bfx"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="zBd-wc-VHc" secondAttribute="trailing" id="UEJ-4F-bym"/>
+                    <constraint firstItem="FMx-Eq-AA5" firstAttribute="leading" secondItem="v91-ZN-gMr" secondAttribute="leadingMargin" id="UiC-qW-GeL"/>
+                    <constraint firstItem="zBd-wc-VHc" firstAttribute="leading" secondItem="FMx-Eq-AA5" secondAttribute="trailing" id="Xzb-WR-0SG"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="BYu-Ah-RNB" secondAttribute="bottom" constant="4" id="cHb-fj-ut6"/>
+                    <constraint firstItem="BYu-Ah-RNB" firstAttribute="top" secondItem="v91-ZN-gMr" secondAttribute="topMargin" constant="-8" id="x5O-0a-LN9"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="BYu-Ah-RNB" secondAttribute="trailing" constant="3" id="zPa-40-EaY"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="6gn-Yi-8RZ"/>
+                        <exclude reference="UEJ-4F-bym"/>
+                        <exclude reference="Xzb-WR-0SG"/>
+                        <exclude reference="GnV-b3-xka"/>
+                        <exclude reference="RpD-jw-lFo"/>
+                        <exclude reference="cHb-fj-ut6"/>
+                        <exclude reference="zPa-40-EaY"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="userImage" destination="FMx-Eq-AA5" id="xN0-lv-h5V"/>
+                <outlet property="userScore" destination="BYu-Ah-RNB" id="y3p-T8-OqQ"/>
+                <outlet property="username" destination="zBd-wc-VHc" id="zG9-JQ-3ed"/>
+            </connections>
+            <point key="canvasLocation" x="301" y="207"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="challengeicon.png" width="300" height="216"/>
+    </resources>
+</document>
